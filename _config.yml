@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: The Great Awakening
+title: Tales of Tessalonia
 subtitle:
 description:
 keywords:
@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://dreadboy.github.io/the-great-awakening/
-root: /the-great-awakening/
+url: https://dreadboy.github.io/tales-of-tessalonia/
+root: /tales-of-tessalonia/
 permalink: :category/:title/
 permalink_defaults:
 
@@ -77,6 +77,6 @@ theme: dnd
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git   
-  repo: git@github.com:DreadBoy/the-great-awakening.git  #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  type: git
+  repo: git@github.com:DreadBoy/tales-of-tessalonia.git  #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: gh-pages

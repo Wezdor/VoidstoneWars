@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import './world-map';
 
-class Awakening {
+class ImagePreview {
 
     private readonly overlay: HTMLElement;
 
@@ -28,13 +28,13 @@ class Awakening {
 }
 
 
-declare const awakening: Awakening;
-(window as any).awakening = new Awakening();
+declare const imagePreview: ImagePreview;
+(window as any).imagePreview = new ImagePreview();
 
 $('.img-center.resizable').on('click', function () {
     const image = this as HTMLImageElement;
-    awakening.toggleImage(image.src, image.alt);
+    imagePreview.toggleImage(image.src, image.alt);
 });
 $('.image-preview').on('click', function () {
-    awakening.toggleImage();
+    imagePreview.toggleImage();
 });

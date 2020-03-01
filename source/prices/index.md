@@ -30,27 +30,7 @@ List of all items available in shops and markets can be found in [spreadsheet](h
 * Cheese, hunk	*1 sp*
 * Banquet (per person)	*10 gp*
 
-### Warm Clothes
-
-Higher tier clothes will provide better protection to the wearer
-
-|             | Tier I | Tier II | Tier III |
-|-------------|--------|---------|----------|
-| Hat         | 1 gp   | 4 gp    | 10 gp    |
-| Gloves      | 1 gp   | 4 gp    | 10 gp    |
-| Winter Coat | 5 gp   | 10 gp   | 20 gp    |
-
 ### Custom Potions
-
-#### Healing
-
-Drinking 10mL from the vial heals player for 1d4 + 1 HP. In single action you can drink any amount of liquid from the vial (anywhere from 10mL to whole vial, in 10mL increments). Passing potion to the other player expends bonus action on your part and reaction on other player's part.
-
-* 20mL vial - 50gp
-* 40mL vial - 100gp
-* 60ml vial - 200gp
-* 80mL vial - 300gp
-* 100mL vial - 400gp
 
 #### Poisons
 
@@ -70,5 +50,3 @@ Drinking 10mL from the vial heals player for 1d4 + 1 HP. In single action you ca
 12. Witchbane (550gp, Ingested, DC 16 CON, 3d10)
 
 If you use Ingested potion as an injury potion (get it directly into bloodstream through injury), it becomes more efficient - you can use one dose 5 times.
-
-King under the mountain shop also sells large quantities - you can buy a cauldron of potion for 10x the price. A cauldron contains 20 doses.

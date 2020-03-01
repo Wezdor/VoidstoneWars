@@ -1,4 +1,4 @@
-# The Great Awakening
+# Tales of Tessalonia
 
 Campaign log and diary for local D&D group. `master` branch contains theme and source files, `gh-pages` contains generated and deployed site.
 
