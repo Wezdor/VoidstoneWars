@@ -1,0 +1,73 @@
+@keyframes opening
+  0%
+    transform: scale(0)
+    opacity: 0
+  1%
+    transform: scale(1)
+    opacity: 0
+  100%
+    transform: scale(1)
+    opacity: 1
+
+@keyframes opening-img
+  0%
+    transform: scale(0.5)
+  100%
+    transform: scale(1)
+
+@keyframes closing
+  0%
+    transform: scale(1)
+    opacity: 1
+  99%
+    transform: scale(1)
+    opacity: 0
+  100%
+    transform: scale(0)
+    opacity: 0
+
+@keyframes closing-img
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(0.5)
+
+.img-center.resizable
+  cursor: zoom-in
+
+.image-preview
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  cursor: zoom-out
+  z-index: 20
+  background: rgba(black, 0.5)
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  transform: scale(0)
+
+  img
+    max-width: 95%
+    max-height: 95%
+    width: auto
+    box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.75)
+
+  $duration: 0.2s
+
+  &.opening
+    animation: opening $duration forwards
+
+    img
+      animation: opening-img $duration forwards
+
+  &.closing
+    animation: closing $duration forwards
+
+    img
+      animation: closing-img $duration forwards
+
