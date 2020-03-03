@@ -1,4 +1,4 @@
-import {CRS, LatLng as _LatLng, LeafletMouseEvent, map, Map, tileLayer} from 'leaflet';
+import {CRS, LatLng as _LatLng, LatLngBounds, LeafletMouseEvent, Map, tileLayer} from 'leaflet';
 
 class LatLng extends _LatLng {
     public static toUrl(latLng: _LatLng): string {
@@ -22,11 +22,14 @@ class WorldMap {
 
         const tiles = tileLayer('/tales-of-tessalonia/tiles/{z}/{x}/{y}.png', {
             minZoom: -2,
-            maxZoom: 2,
+            maxZoom: 1,
+            bounds: new LatLngBounds(
+                [-3200, 0], [0, 4000],
+            ),
         });
 
         const hash = this.readHash();
-        this.map = map(
+        this.map = new Map(
             this.popup.find('.leaflet').get(0),
             {
                 crs: CRS.Simple,
@@ -51,7 +54,7 @@ class WorldMap {
 
         this.map.on('click ', e => {
             const {lat, lng} = (e as LeafletMouseEvent).latlng;
-            console.log('You clicked the map at latitude: ' + lat + ' and longitude: ' + lng);
+            console.log(`You clicked the map at [${lat}, ${lng}]`);
         });
 
         $(window)
@@ -76,8 +79,8 @@ class WorldMap {
 
     private readHash() {
         const ret = {
-            zoom: 0,
-            center: new LatLng(-2005, 2593),
+            zoom: -1,
+            center: new LatLng(-1414, 2802),
         };
         location.hash
             .replace('#world-map?', '')
