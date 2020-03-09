@@ -16,7 +16,7 @@ body
     align-items: center
 
 header
-    margin-bottom: 50px
+    margin-bottom: 20px
 
     .title
         display: block
@@ -53,6 +53,7 @@ header
     font-size: 100%
     flex-grow: 1
     padding: 0 0 60px 0
+    overflow: auto
 
     p + p
         margin-top: 0
@@ -70,6 +71,8 @@ header
 
     h1 + p::first-letter
         font-size: 5em
+        line-height: 0.7em
+        padding: 0.3em 0.15em 0 0
 
 header, .phb
     max-width: 800px
@@ -82,6 +85,16 @@ header, .phb
     display: block
     width: 80%
     margin: 0 auto
+
+.img-inline.left
+    width: 40%
+    float: left
+    margin: 0 1rem 0 0
+
+.img-inline.right
+    width: 40%
+    float: right
+    margin: 0 0 0 1rem
 
 blockquote.done
     position: relative

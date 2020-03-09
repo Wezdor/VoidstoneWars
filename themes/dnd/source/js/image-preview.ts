@@ -26,7 +26,7 @@ class ImagePreview {
 declare const imagePreview: ImagePreview;
 (window as any).imagePreview = new ImagePreview();
 
-$('.img-center.resizable').on('click', function () {
+$('img.resizable').on('click', function () {
     const image = this as HTMLImageElement;
     imagePreview.toggleImage(image.src, image.alt);
 });
