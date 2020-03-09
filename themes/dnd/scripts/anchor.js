@@ -1,6 +1,5 @@
 // {% anchor id [text] %}
 function anchor(args) {
-    console.log(args);
     if (!args[0]) {
         return '<b>Missing 1st argument!</b>';
     }
