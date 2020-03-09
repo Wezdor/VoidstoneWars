@@ -8,16 +8,16 @@ html
         !=css('css/index')
     body
         header
-            div.title Tales of Tessalonia
+            a(href=url_for('/')).title Zgodbe iz Tessalonie
             nav
                 div.h3
-                    a(href=url_for('/')) Home
+                    a(href=url_for('tessalonia')) Zemljevid
                 div.h3
-                    a(href=url_for('tessalonia')) Tessalonia
+                    a(href=url_for('gods')) Bogovi
                 div.h3
-                    a(href=url_for('prices')) Prices
+                    a(href=url_for('prices')) Trgovine in cene
                 div.h3
-                    a(href=url_for('help')) Help
+                    a(href=url_for('index')) Index
 
         div.phb
             block body
