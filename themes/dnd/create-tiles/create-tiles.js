@@ -6,27 +6,27 @@ const {SingleBar, Presets} = require('cli-progress');
 
 const config = [
     {
-        source: '2020 - 6.png',
+        source: '2020 - 7.png',
         zoom: 2,
         scale: 4,
     },
     {
-        source: '2020 - 6.png',
+        source: '2020 - 7.png',
         zoom: 1,
         scale: 2,
     },
     {
-        source: '2020 - 6.png',
+        source: '2020 - 7.png',
         zoom: 0,
         scale: 1,
     },
     {
-        source: '2020 - 6.png',
+        source: '2020 - 7.png',
         zoom: -1,
         scale: 0.5,
     },
     {
-        source: '2020 - 6.png',
+        source: '2020 - 7.png',
         zoom: -2,
         scale: 0.25,
     },
