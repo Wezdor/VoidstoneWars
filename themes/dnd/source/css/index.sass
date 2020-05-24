@@ -3,6 +3,8 @@
 @import 'image-review'
 @import 'world-map'
 
+@use "sass:math"
+
 *
     box-sizing: border-box
 
@@ -27,6 +29,9 @@ header
         font-weight: 800
         color: #58180D
         font-size: 70px
+
+        @media (max-width: 568px)
+            font-size: 50px
 
     nav
         display: flex
@@ -99,6 +104,13 @@ header, .phb
     width: 40%
     float: right
     margin: 0 0 0 1rem
+
+.img-split
+    width: calc((100% - 10px) / 2)
+    display: inline-block
+
+    & + &
+        margin-left: 5px
 
 blockquote.done
     position: relative
