@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "scripts": {
     "build": "rimraf public && hexo generate",
@@ -12,14 +12,14 @@
     "start": "hexo server"
   },
   "dependencies": {
-    "@types/jquery": "3.3.33",
-    "@types/leaflet": "1.5.10",
+    "@types/jquery": "3.3.38",
+    "@types/leaflet": "1.5.12",
     "bluebird": "3.7.2",
-    "chalk": "3.0.0",
-    "cli-progress": "^3.6.0",
-    "hexo": "4.2.0",
+    "chalk": "4.0.0",
+    "cli-progress": "^3.8.2",
+    "hexo": "4.2.1",
     "hexo-deployer-git": "2.1.0",
-    "hexo-fs": "2.0.0",
+    "hexo-fs": "3.1.0",
     "hexo-generator-archive": "1.0.0",
     "hexo-generator-category": "1.0.0",
     "hexo-generator-index": "1.0.0",
@@ -32,17 +32,15 @@
     "hexo-renderer-ts": "1.2.5",
     "hexo-server": "1.0.0",
     "hexo-webpack": "1.0.0",
-    "jimp": "0.9.5",
-    "jquery": "3.5.0",
+    "jimp": "0.12.1",
+    "jquery": "3.5.1",
     "leaflet": "1.6.0",
     "lodash": "4.17.15",
-    "marked": "0.8.0",
+    "marked": "1.1.0",
+    "minimist": "1.2.5",
     "rimraf": "3.0.2",
-    "ts-loader": "6.2.1",
-    "typescript": "3.8.3",
-    "webpack": "4.42.0"
-  },
-  "resolutions": {
-    "minimist": "0.2.1"
+    "ts-loader": "7.0.5",
+    "typescript": "3.9.3",
+    "webpack": "4.43.0"
   }
 }
