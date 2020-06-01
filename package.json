@@ -7,8 +7,7 @@
   },
   "scripts": {
     "build": "rimraf public && hexo generate",
-    "deploy": "hexo deploy",
-    "build-deploy": "yarn run build && yarn run deploy && rimraf public",
+    "deploy": "hexo clean && hexo deploy",
     "start": "hexo server"
   },
   "dependencies": {
