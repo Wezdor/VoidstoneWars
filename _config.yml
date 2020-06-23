@@ -79,4 +79,3 @@ theme: dnd
 deploy:
   type: git
   repo: git@github.com:DreadBoy/tales-of-tessalonia.git  #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-  branch: gh-pages
