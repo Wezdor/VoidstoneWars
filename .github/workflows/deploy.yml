@@ -38,7 +38,7 @@ jobs:
           ${{ runner.os }}-
     - name: Install Dependencies
       if: steps.cache.outputs.cache-hit != 'true'
-      run: LIBSASS_EXT="no" npm ci
+      run: LIBSASS_EXT="no" yarn install --frozen-lockfile
     - name: Install SSH key
       uses: shimataro/ssh-key-action@v2
       with:
