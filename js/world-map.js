@@ -44,7 +44,7 @@ var WorldMap = /** @class */ (function () {
         var _this = this;
         this.popup = $('<div class="world-map"><div class="leaflet"></div></div>');
         $(document.body).append(this.popup);
-        var tiles = leaflet_1.tileLayer('/tales-of-tessalonia/tiles/{z}/{x}/{y}.png', {
+        var tiles = leaflet_1.tileLayer('/VoidstoneWars/tiles/{z}/{x}/{y}.png', {
             minZoom: -2,
             maxZoom: 1,
             bounds: new leaflet_1.LatLngBounds([-3200, 0], [0, 4000]),
